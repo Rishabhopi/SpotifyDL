@@ -1,0 +1,78 @@
+{
+  "name": "SpotifyDl",
+  "description": "A simple Telegram bot to download music.",
+  "keywords": [
+    "bot",
+    "music",
+    "music downloader"
+  ],
+  "repository": "https://github.com/DX-MODS/",
+  "website": "https://t.me/SpotifyDownlodbot",
+  "success_url": "https://t.me/SpotifyDownlodbot",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "The ID of the owner of the bot",
+      "value": ""
+    },
+    "SUDO_USERS": {
+      "description": "The ID of the sudo users of the bot",
+      "value": "",
+      "required": false
+    },
+    "AUTH_CHATS": {
+      "description": "The ID of the authorized chats of the bot",
+      "value": "",
+      "required": false
+    },
+    "LOG_GROUP": {
+      "description": "The ID of the group to log to",
+      "value": "",
+      "required": false
+    },
+    "DB_URL": {
+      "description": "add mongodb uri",
+      "value": ""
+    },
+    "DB_NAME": {
+      "description": "add db name",
+      "value": "Cluster0"
+    },
+    "START_PIC": {
+      "description": "start message pic",
+      "value": ""
+    },
+    "ADMIN": {
+      "description": "id of admins",
+      "value": ""
+    },
+    "SPOTIPY_CLIENT_SECRET": {
+      "description": "The client secret of the Spotify API",
+      "value": ""
+    },
+    "SPOTIPY_CLIENT_ID": {
+      "description": "The client ID of the Spotify API",
+      "value": ""
+    }
+  },
+"buildpacks": [
+    {
+      "url": "https://github.com/DX-MODS/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
+
